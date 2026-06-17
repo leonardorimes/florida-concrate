@@ -1,5 +1,5 @@
 "use client";
-
+import { FadeIn, StaggerContainer, StaggerItem } from "./Animations";
 const reviews = [
   {
     name: "Joseph Dorsey",
@@ -22,14 +22,14 @@ export default function ReviewsSection({ className = "reviews", city = "Davenpor
   return (
     <section className={className} id="reviews">
       <div className="reviews__inner">
-        <div className="reviews__head">
+        <FadeIn className="reviews__head">
           <h2>Trusted by Homeowners</h2>
           <p>Reviews from {city} customers who love our services and pricing</p>
-        </div>
+        </FadeIn>
 
-        <div className="reviews__grid">
+        <StaggerContainer className="reviews__grid">
           {reviews.map((r, i) => (
-            <div className="review-card" key={i} style={{border: '1px solid #e5e5e5'}}>
+            <StaggerItem className="review-card" key={i} style={{border: '1px solid #e5e5e5'}}>
               <div className="review-stars" style={{color: '#FFB900'}}>★ ★ ★ ★ ★</div>
               <p className="review-text">{r.text}</p>
               <button className="read-more">Read more</button>
@@ -46,21 +46,23 @@ export default function ReviewsSection({ className = "reviews", city = "Davenpor
                   <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                 </svg>
               </div>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
 
-        <div className="photos__grid">
-          <img src="/banner.webp" alt="Happy customer 1" className="photo-card" />
-          <img src="/banner2.jpg" alt="Happy customer 2" className="photo-card" />
-          <img src="/banner3.jpg" alt="Happy customer 3" className="photo-card" />
-        </div>
+        <StaggerContainer className="photos__grid">
+          <StaggerItem><img src="/banner.webp" alt="Happy customer 1" className="photo-card" /></StaggerItem>
+          <StaggerItem><img src="/banner2.jpg" alt="Happy customer 2" className="photo-card" /></StaggerItem>
+          <StaggerItem><img src="/banner3.jpg" alt="Happy customer 3" className="photo-card" /></StaggerItem>
+        </StaggerContainer>
 
-        <div className="reviews-cta-box" style={{background: 'var(--teal-deep)', borderRadius: '16px', padding: '40px', textAlign: 'center', marginTop: '60px', color: '#fff'}}>
-          <h3 style={{fontSize: '28px', margin: '0 0 10px'}}>Happy With Our Work?</h3>
-          <div className="stars" style={{color: '#FFB900', fontSize: '24px', letterSpacing: '4px', marginBottom: '20px'}}>★★★★★</div>
-          <a href="#quote" className="btn-white" style={{display: 'inline-block', background: '#fff', color: 'var(--teal)', padding: '12px 28px', borderRadius: '8px', fontWeight: '700', textDecoration: 'none'}}>Leave us a Google Review</a>
-        </div>
+        <FadeIn delay={0.2} direction="up">
+          <div className="reviews-cta-box" style={{background: 'var(--teal-deep)', borderRadius: '16px', padding: '40px', textAlign: 'center', marginTop: '60px', color: '#fff'}}>
+            <h3 style={{fontSize: '28px', margin: '0 0 10px'}}>Happy With Our Work?</h3>
+            <div className="stars" style={{color: '#FFB900', fontSize: '24px', letterSpacing: '4px', marginBottom: '20px'}}>★★★★★</div>
+            <a href="https://google.com/maps/place//data=!4m3!3m2!1s0x2c5ae181a1962a79:0x90f52661f0144d57!12e1?source=g.page.m.ia._&laa=nmx-review-solicitation-ia2" target="_blank" rel="noopener noreferrer" className="btn-white" style={{display: 'inline-block', background: '#fff', color: 'var(--teal)', padding: '12px 28px', borderRadius: '8px', fontWeight: '700', textDecoration: 'none'}}>Leave us a Google Review</a>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

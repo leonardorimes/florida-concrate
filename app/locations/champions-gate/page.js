@@ -1,4 +1,5 @@
 "use client";
+import { FadeIn, StaggerContainer, StaggerItem } from "../../components/Animations";
 import { useState, useEffect, useRef } from "react";
 import WhyUsSection from "../../components/WhyUsSection";
 import ReviewsSection from "../../components/ReviewsSection";
@@ -241,7 +242,7 @@ function StepsSection() {
   return (
     <section className="process" aria-labelledby="process-heading" style={{ borderRadius: "0 0 60px 60px" }}>
       <div className="process__inner">
-        <div className="process__copy">
+        <FadeIn className="process__copy">
           <button className="eyebrow process__eyebrow">How it works</button>
           <h2 id="process-heading">
             Professional Concrete Coating, made simple.
@@ -249,10 +250,10 @@ function StepsSection() {
           <p className="process__lead">
             We make it easy to upgrade your concrete surfaces without the stress
           </p>
-        </div>
+        </FadeIn>
 
-        <div className="process__cards">
-          <article className="process__card">
+        <StaggerContainer className="process__cards">
+          <StaggerItem className="process__card">
             <h3>Step 1</h3>
             <h4>Request a quote</h4>
             <p>
@@ -260,9 +261,9 @@ function StepsSection() {
               form. Whether it's a garage, patio, or commercial space, we'll
               provide you with a fast, accurate estimate within 24 hours.
             </p>
-          </article>
+          </StaggerItem>
 
-          <article className="process__card">
+          <StaggerItem className="process__card">
             <h3>Step 2</h3>
             <h4>Schedule your service</h4>
             <p>
@@ -270,9 +271,9 @@ function StepsSection() {
               details and make sure everything is ready for a smooth
               installation.
             </p>
-          </article>
+          </StaggerItem>
 
-          <article className="process__card">
+          <StaggerItem className="process__card">
             <h3>Step 3</h3>
             <h4>We get to work</h4>
             <p>
@@ -280,8 +281,8 @@ function StepsSection() {
               care, transforming your concrete into a durable, clean, and
               great-looking surface that lasts.
             </p>
-          </article>
-        </div>
+          </StaggerItem>
+        </StaggerContainer>
 
         <div className="process__cta-wrap">
           <a className="process__cta" href="#quote" style={{ background: "#fff", color: "var(--teal)" }}>

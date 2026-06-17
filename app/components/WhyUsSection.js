@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import { FadeIn, StaggerContainer, StaggerItem } from "./Animations";
 
 function AnimatedCounter({ end, duration = 2000, suffix = "" }) {
   const [count, setCount] = useState(0);
@@ -40,7 +41,7 @@ export default function WhyUsSection({ className = "why-us" }) {
   return (
     <section className={className} id="why-us">
       <div className="why-us__inner">
-        <div className="why-us__head">
+        <FadeIn className="why-us__head">
           <button className="eyebrow process__eyebrow" style={className.includes('why-us--white') ? {background: 'var(--orange)', border: 'none', color: '#fff'} : {}}>
             <svg viewBox="0 0 24 24" aria-hidden="true" style={className.includes('why-us--white') ? {fill: 'currentColor', width: '14px', marginRight: '6px'} : {}}>
               <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
@@ -56,28 +57,28 @@ export default function WhyUsSection({ className = "why-us" }) {
               When we started Florida Concrete Coating in 2023, our goal was simple: provide top-tier results without cutting corners. From surface prep to final seal, we treat every project like it&apos;s our own home.
             </p>
           </div>
-        </div>
+        </FadeIn>
 
-        <div className="why-us__stats">
-          <div className="stat-card">
+        <StaggerContainer className="why-us__stats">
+          <StaggerItem className="stat-card">
             <div className="stat-number">
               <AnimatedCounter end={100} suffix="+" />
             </div>
             <div className="stat-label">Happy Clients</div>
-          </div>
-          <div className="stat-card">
+          </StaggerItem>
+          <StaggerItem className="stat-card">
             <div className="stat-number">
               <AnimatedCounter end={5} suffix="★" />
             </div>
             <div className="stat-label">Google Reviews</div>
-          </div>
-          <div className="stat-card">
+          </StaggerItem>
+          <StaggerItem className="stat-card">
             <div className="stat-number">
               <AnimatedCounter end={3} suffix="+" />
             </div>
             <div className="stat-label">Years of Experience</div>
-          </div>
-        </div>
+          </StaggerItem>
+        </StaggerContainer>
       </div>
     </section>
   );

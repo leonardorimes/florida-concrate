@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import { FadeIn, StaggerContainer, StaggerItem } from "./components/Animations";
 import WhyUsSection from "./components/WhyUsSection";
 import ReviewsSection from "./components/ReviewsSection";
 import Header from "./components/Header";
@@ -78,7 +79,7 @@ function QuoteForm() {
 function Expertise() {
   return (
     <section className="expertise" id="about">
-      <div className="expertise__inner">
+      <FadeIn className="expertise__inner">
         <div className="expertise__copy">
           <div>
             <div className="expertise__eyebrow">
@@ -111,7 +112,7 @@ function Expertise() {
             alt="Detailed gray flake epoxy floor coating"
           />
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 }
@@ -120,7 +121,7 @@ function StepsSection() {
   return (
     <section className="process" aria-labelledby="process-heading">
       <div className="process__inner">
-        <div className="process__copy">
+        <FadeIn className="process__copy">
           <button className="eyebrow process__eyebrow">How it works</button>
           <h2 id="process-heading">
             Professional Concrete Coating, made simple.
@@ -128,10 +129,10 @@ function StepsSection() {
           <p className="process__lead">
             We make it easy to upgrade your concrete surfaces without the stress
           </p>
-        </div>
+        </FadeIn>
 
-        <div className="process__cards">
-          <article className="process__card">
+        <StaggerContainer className="process__cards">
+          <StaggerItem className="process__card">
             <h3>Step 1</h3>
             <h4>Request a quote</h4>
             <p>
@@ -139,9 +140,9 @@ function StepsSection() {
               form. Whether it's a garage, patio, or commercial space, we'll
               provide you with a fast, accurate estimate within 24 hours.
             </p>
-          </article>
+          </StaggerItem>
 
-          <article className="process__card">
+          <StaggerItem className="process__card">
             <h3>Step 2</h3>
             <h4>Schedule your service</h4>
             <p>
@@ -149,9 +150,9 @@ function StepsSection() {
               details and make sure everything is ready for a smooth
               installation.
             </p>
-          </article>
+          </StaggerItem>
 
-          <article className="process__card">
+          <StaggerItem className="process__card">
             <h3>Step 3</h3>
             <h4>We get to work</h4>
             <p>
@@ -159,8 +160,8 @@ function StepsSection() {
               care, transforming your concrete into a durable, clean, and
               great-looking surface that lasts.
             </p>
-          </article>
-        </div>
+          </StaggerItem>
+        </StaggerContainer>
 
         <div className="process__cta-wrap">
           <a className="process__cta" href="#quote">
@@ -218,7 +219,7 @@ function ServicesSection() {
       aria-labelledby="services-heading"
     >
       <div className="services__inner">
-        <div className="services__head">
+        <FadeIn className="services__head">
           <button className="eyebrow process__eyebrow">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
@@ -233,11 +234,11 @@ function ServicesSection() {
             patios, driveways, and more, built for durability, safety, and
             long-lasting performance.
           </p>
-        </div>
+        </FadeIn>
 
-        <div className="services__grid">
+        <StaggerContainer className="services__grid">
           {items.map((it, idx) => (
-            <a href={it.link || "#"} className="service-card" key={idx} style={{display: 'block', textDecoration: 'none'}}>
+            <StaggerItem as="a" href={it.link || "#"} className="service-card" key={idx} style={{display: 'block', textDecoration: 'none'}}>
               <div className="service-card__media">
                 <img src={it.img} alt={it.title} />
               </div>
@@ -245,15 +246,15 @@ function ServicesSection() {
                 <h4>{it.title}</h4>
                 <p>{it.text}</p>
               </div>
-            </a>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerContainer>
 
-        <div className="services__cta-wrap">
+        <FadeIn className="services__cta-wrap">
           <a className="services__cta" href="#quote">
             Get Free Estimate
           </a>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );
@@ -357,7 +358,7 @@ function ResultsSection() {
   return (
     <section className="results" id="results">
       <div className="results__inner">
-        <div className="results__head">
+        <FadeIn className="results__head">
           <button className="results__eyebrow">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2z" />
@@ -368,18 +369,18 @@ function ResultsSection() {
           <p>
             Take a look at how our professional service transforms homes and delivers noticeable improvements.
           </p>
-        </div>
+        </FadeIn>
         
-        <div className="results__grid">
-          <div className="result-column result-column--before">
+        <StaggerContainer className="results__grid">
+          <StaggerItem className="result-column result-column--before">
             <h3>Before</h3>
             <img src="/FL CONCRETE/before.jpg" alt="Before coating" className="result-image" />
-          </div>
-          <div className="result-column result-column--after">
+          </StaggerItem>
+          <StaggerItem className="result-column result-column--after">
             <h3>After</h3>
             <img src="/FL CONCRETE/after.jpg" alt="After coating" className="result-image" />
-          </div>
-        </div>
+          </StaggerItem>
+        </StaggerContainer>
       </div>
     </section>
   );
@@ -416,7 +417,7 @@ export default function Home() {
     <main>
       <Header />
       <section className="hero">
-        <div className="hero__content">
+        <FadeIn className="hero__content">
           <div className="hero-copy">
             <div className="eyebrow">
               <b>★</b> Davenport Epoxy Floor Expert
@@ -444,6 +445,7 @@ export default function Home() {
           </div>
           <QuoteForm />
         </div>
+        </FadeIn>
         <button className="chat-button" aria-label="Open chat">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M20.5 11.6a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.1-.8L4 21l1.5-4A8.3 8.3 0 1 1 20.5 11.6Z" />
