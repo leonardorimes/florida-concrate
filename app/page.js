@@ -176,36 +176,36 @@ function StepsSection() {
 function ServicesSection() {
   const items = [
     {
-      img: "/FL CONCRETE/Imagem-do-WhatsApp-de-2025-09-29-as-13.28.47_64c15703.jpg",
+      img: "/FL CONCRETE/Imagem-do-WhatsApp-de-2025-09-29-as-13.28.47_64c15703.webp",
       title: "Garage Floor Coatings",
       text: "Durable, slip-resistant coatings that protect your garage and give it a clean, finished look.",
       link: "/garage-floor-coatings"
     },
     {
-      img: "/FL CONCRETE/after.jpg",
+      img: "/FL CONCRETE/after.webp",
       title: "Patio & Lanai Coatings",
       text: "Weather-resistant coatings designed to enhance comfort, safety, and style in your outdoor spaces.",
       link: "/patio-lanai-coatings"
     },
     {
-      img: "/secao4-card3.png",
+      img: "/FL CONCRETE/IMG_1147 (1).webp",
       title: "Driveway Coatings",
       text: "Long-lasting coatings that improve curb appeal while protecting against cracks, stains, and wear.",
     },
     {
-      img: "/secao4-card4.png",
+      img: "/FL CONCRETE/Imagem-do-WhatsApp-de-2025-09-29-as-10.45.49_a04135a6.webp",
       title: "Pool Deck Coatings",
       text: "Coatings that reduce heat, improve traction, and resist cracking, fading, and moisture.",
       link: "/pool-deck-coatings"
     },
     {
-      img: "/secao4-card5.png",
+      img: "/FL CONCRETE/IMG_2874.webp",
       title: "Concrete Repair & Sealing",
       text: "Restore damaged concrete and seal it to prevent future cracks and moisture intrusion.",
       link: "/concrete-repair-sealing"
     },
     {
-      img: "/secao4-card6.png",
+      img: "/FL CONCRETE/IMG_2010.webp",
       title: "Commercial Floor Coatings",
       text: "Heavy-duty flooring solutions built for high-traffic environments with durability and easy maintenance.",
       link: "/commercial-floor-coatings"
@@ -444,7 +444,6 @@ export default function Home() {
             </ul>
           </div>
           <QuoteForm />
-        </div>
         </FadeIn>
         <button className="chat-button" aria-label="Open chat">
           <svg viewBox="0 0 24 24" aria-hidden="true">
