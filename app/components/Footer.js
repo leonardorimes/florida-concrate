@@ -18,7 +18,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-inner">
         <div className="footer-col footer-col--brand">
-          <img src="/tmph7s4vf_3.webp" alt="Florida Concrete Coating" className="footer-logo" />
+          <img width="800" height="600" loading="lazy" src="/tmph7s4vf_3.webp" alt="Florida Concrete Coating" className="footer-logo" />
         </div>
         
         <div className="footer-col">

@@ -106,7 +106,7 @@ function CTASection() {
             </svg>
             Get started
           </button>
-          <h2>Ready to get started?</h2>
+          <h3>Ready to get started?</h3>
           <p>Get a free quote / book now</p>
           <a href="#quote" className="cta-banner__btn">Get Free Estimate</a>
         </div>
@@ -120,7 +120,7 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-inner">
         <div className="footer-col footer-col--brand">
-          <img src="/tmph7s4vf_3.webp" alt="Florida Concrete Coating" className="footer-logo" />
+          <img width="800" height="600" loading="lazy" src="/tmph7s4vf_3.webp" alt="Florida Concrete Coating" className="footer-logo" />
         </div>
         
         <div className="footer-col">
@@ -215,7 +215,7 @@ function DetailsSection() {
 
       <div className="details-section__grid">
         <div className="details-section__image-wrap">
-          <img src="/FL%20CONCRETE/tmpdmp1f_ig.jpg" alt="Beautiful coated pool deck" />
+          <img width="800" height="600" loading="lazy" src="/FL%20CONCRETE/tmpdmp1f_ig.jpg" alt="Beautiful coated pool deck" />
         </div>
         <div className="details-section__features">
           <ul>
@@ -250,9 +250,9 @@ function RecentWorks() {
           <p>Take a look at some of our recent concrete coating projects. We take pride in transforming ordinary spaces into durable and beautiful surfaces.</p>
         </div>
         <div className="recent-works__grid">
-          <img src="/Our%20Recent_1.jpg" alt="Recent work 1" />
-          <img src="/Our%20Recent_2.jpg" alt="Recent work 2" />
-          <img src="/Our%20Recent_3.jpg" alt="Recent work 3" />
+          <img width="800" height="600" loading="lazy" src="/Our%20Recent_1.jpg" alt="Recent work 1" />
+          <img width="800" height="600" loading="lazy" src="/Our%20Recent_2.jpg" alt="Recent work 2" />
+          <img width="800" height="600" loading="lazy" src="/Our%20Recent_3.jpg" alt="Recent work 3" />
         </div>
         <div className="recent-works__action">
           <a href="#quote" className="btn-secondary">Get Free Estimate</a>

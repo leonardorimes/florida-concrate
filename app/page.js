@@ -258,7 +258,7 @@ function ServicesSection() {
           {items.map((it, idx) => (
             <StaggerItem as="a" href={it.link || "#"} className="service-card" key={idx} style={{display: 'block', textDecoration: 'none'}}>
               <div className="service-card__media">
-                <img src={it.img} alt={it.title} />
+                <img width="800" height="600" loading="lazy" src={it.img} alt={it.title} />
               </div>
               <div className="service-card__meta">
                 <h4>{it.title}</h4>
@@ -364,7 +364,7 @@ function FAQSection() {
             <FAQAccordion items={faqData} />
           </div>
           <div className="faq__right">
-            <img src="/owner-joao.png" alt="Owner standing in garage" className="faq__image" />
+            <img width="800" height="600" loading="lazy" src="/owner-joao.png" alt="Owner standing in garage" className="faq__image" />
           </div>
         </div>
       </div>
@@ -392,11 +392,11 @@ function ResultsSection() {
         <StaggerContainer className="results__grid">
           <StaggerItem className="result-column result-column--before">
             <h3>Before</h3>
-            <img src="/FL CONCRETE/before.jpg" alt="Before coating" className="result-image" />
+            <img width="800" height="600" loading="lazy" src="/FL CONCRETE/before.jpg" alt="Before coating" className="result-image" />
           </StaggerItem>
           <StaggerItem className="result-column result-column--after">
             <h3>After</h3>
-            <img src="/FL CONCRETE/after.jpg" alt="After coating" className="result-image" />
+            <img width="800" height="600" loading="lazy" src="/FL CONCRETE/after.jpg" alt="After coating" className="result-image" />
           </StaggerItem>
         </StaggerContainer>
       </div>

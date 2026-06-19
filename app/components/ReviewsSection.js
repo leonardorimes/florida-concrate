@@ -35,7 +35,7 @@ export default function ReviewsSection({ className = "reviews", city = "Davenpor
               <button className="read-more">Read more</button>
               <div className="review-author">
                 <div className="avatar-wrapper">
-                  <img src={r.avatar} alt={r.name} />
+                  <img width="800" height="600" loading="lazy" src={r.avatar} alt={r.name} />
                   <div className="avatar-badge" style={{background: '#FFB900'}}>★</div>
                 </div>
                 <span className="author-name">{r.name}</span>
@@ -51,9 +51,9 @@ export default function ReviewsSection({ className = "reviews", city = "Davenpor
         </StaggerContainer>
 
         <StaggerContainer className="photos__grid">
-          <StaggerItem><img src="/banner.webp" alt="Happy customer 1" className="photo-card" /></StaggerItem>
-          <StaggerItem><img src="/banner2.jpg" alt="Happy customer 2" className="photo-card" /></StaggerItem>
-          <StaggerItem><img src="/banner3.jpg" alt="Happy customer 3" className="photo-card" /></StaggerItem>
+          <StaggerItem><img width="800" height="600" loading="lazy" src="/banner.webp" alt="Happy customer 1" className="photo-card" /></StaggerItem>
+          <StaggerItem><img width="800" height="600" loading="lazy" src="/banner2.jpg" alt="Happy customer 2" className="photo-card" /></StaggerItem>
+          <StaggerItem><img width="800" height="600" loading="lazy" src="/banner3.jpg" alt="Happy customer 3" className="photo-card" /></StaggerItem>
         </StaggerContainer>
 
         <FadeIn delay={0.2} direction="up">

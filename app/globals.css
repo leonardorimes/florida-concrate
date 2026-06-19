@@ -1528,28 +1528,29 @@ h1 strong {
 /* Footer */
 .site-footer {
   background: #eff1f2;
-  padding: 60px 24px 80px;
+  padding: 25px 24px;
 }
 
 .footer-inner {
   width: 100%;
-  max-width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer-logo {
-  width: 140px;
+  width: 90px;
+  height: auto;
   object-fit: contain;
 }
 
 .footer-col h4 {
   color: var(--teal);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  margin: 0 0 20px;
+  margin: 0 0 12px;
 }
 
 .footer-col ul {
@@ -1558,14 +1559,14 @@ h1 strong {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .footer-col ul li, .footer-col ul a {
   color: var(--orange);
-  font-size: 14px;
+  font-size: 13px;
   text-decoration: none;
-  line-height: 1.4;
+  line-height: 1.2;
   font-weight: 600;
 }
 
@@ -1596,7 +1597,7 @@ h1 strong {
 }
 
 .mt-4 {
-  margin-top: 30px !important;
+  margin-top: 12px !important;
 }
 
 .operating-hours li {

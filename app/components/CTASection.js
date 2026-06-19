@@ -15,7 +15,7 @@ export default function CTASection() {
             </svg>
             Get started
           </button>
-          <h2>Ready to get started?</h2>
+          <h3>Ready to get started?</h3>
           <p>Get a free quote / book now</p>
           <a href="#quote" className="cta-banner__btn">Get Free Estimate</a>
         </div>

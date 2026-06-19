@@ -99,7 +99,7 @@ function CTASection() {
             </svg>
             Get started
           </button>
-          <h2>Ready to get started?</h2>
+          <h3>Ready to get started?</h3>
           <p>Get a free quote / book now</p>
           <a href="#quote" className="cta-banner__btn">Get Free Estimate</a>
         </div>
@@ -113,7 +113,7 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-inner">
         <div className="footer-col footer-col--brand">
-          <img src="/tmph7s4vf_3.webp" alt="Florida Concrete Coating" className="footer-logo" />
+          <img width="800" height="600" loading="lazy" src="/tmph7s4vf_3.webp" alt="Florida Concrete Coating" className="footer-logo" />
         </div>
         
         <div className="footer-col">
@@ -213,7 +213,7 @@ function DetailsSection() {
           <p style={{ color: "#555", lineHeight: "1.6" }}>We treat every home like our own, providing honest service, clear communication, and workmanship you can trust.</p>
         </div>
         <div className="details-section__image-wrap">
-          <img src="/owner-joao.png" alt="Owner João Luiz" style={{ borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', width: '100%', display: 'block' }} />
+          <img width="800" height="600" loading="lazy" src="/owner-joao.png" alt="Owner João Luiz" style={{ borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', width: '100%', display: 'block' }} />
         </div>
       </div>
     </section>
