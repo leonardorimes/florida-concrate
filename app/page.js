@@ -19,12 +19,6 @@ const Phone = () => (
   </svg>
 );
 
-const Mail = () => (
-  <svg viewBox="0 0 24 24" aria-hidden="true">
-    <rect x="3" y="5" width="18" height="14" rx="2" />
-    <path d="m3 7 9 6 9-6" />
-  </svg>
-);
 
 const Wrench = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -32,47 +26,71 @@ const Wrench = () => (
   </svg>
 );
 
-const Logo = ({ compact = false }) => (
-  <img
-    className={`logo ${compact ? "logo--compact" : ""}`}
-    src="/tmph7s4vf_3.webp"
-    alt="Florida Concrete Coating"
-  />
-);
 
 
 function QuoteForm() {
+  const containerRef = useRef(null);
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://link.msgsndr.com/js/form_embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {};
+  }, []);
+
+  useEffect(() => {
+    if (!iframeRef.current || !containerRef.current) return;
+    
+    const observer = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const height = entry.contentRect.height;
+        if (height > 0) {
+          // O formulário é escalado para 80%, então a altura do container deve ser 80% da altura do iframe
+          containerRef.current.style.height = `${height * 0.8}px`;
+        }
+      }
+    });
+
+    observer.observe(iframeRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <form className="quote-card" id="quote">
-      <Logo compact />
-      <h2>GET A FREE QUOTE</h2>
-
-      <div className="field-row">
-        <label>
-          <span>Full Name *</span>
-          <input type="text" placeholder="John Smith" />
-        </label>
-        <label>
-          <span>Phone *</span>
-          <input type="tel" placeholder="(808) 555-1234" />
-        </label>
-      </div>
-
-      <label>
-        <span>Email *</span>
-        <div className="input-with-icon">
-          <Mail />
-          <input type="email" placeholder="Email" />
-        </div>
-      </label>
-
-      <label>
-        <span>Short message about your needs *</span>
-        <textarea placeholder="**Your message goes straight to my phone, I'll get back to you as soon as I'm available**" />
-      </label>
-
-      <button type="submit">SUBMIT</button>
-    </form>
+    <div 
+      className="quote-card" 
+      id="quote" 
+      ref={containerRef}
+      style={{ padding: 0, overflow: "hidden", display: "block" }}
+    >
+      <iframe
+        ref={iframeRef}
+        src="https://api.leadconnectorhq.com/widget/form/GyeMDbEFUVXObVeuHNyp"
+        style={{ 
+          width: "125%", 
+          minHeight: "400px", 
+          border: "none", 
+          borderRadius: "10px",
+          transform: "scale(0.8)",
+          transformOrigin: "top left"
+        }}
+        id="inline-GyeMDbEFUVXObVeuHNyp" 
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Website Form"
+        data-height="999"
+        data-layout-iframe-id="inline-GyeMDbEFUVXObVeuHNyp"
+        data-form-id="GyeMDbEFUVXObVeuHNyp"
+        title="Website Form"
+      />
+    </div>
   );
 }
 
