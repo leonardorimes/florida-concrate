@@ -221,6 +221,7 @@ function DetailsSection() {
           <a href="/contactus" className="btn-primary">Get Free Estimate</a>
         </div>
         <div className="details-section__image-wrap">
+          {/* TEMPORARY HIDE FOR A2P COMPLIANCE
           <a href="https://www.google.com/maps/search/?api=1&query=Google&query_place_id=ChIJmZqjHVbB54gRZ6-0lJoSO1U" target="_blank" rel="noopener noreferrer">
              <iframe 
                 src="https://maps.google.com/maps?q=The+Villages,+FL&t=&z=13&ie=UTF8&iwloc=&output=embed" 
@@ -232,6 +233,7 @@ function DetailsSection() {
                 referrerPolicy="no-referrer-when-downgrade"
              ></iframe>
           </a>
+          */}
         </div>
       </div>
     </section>
