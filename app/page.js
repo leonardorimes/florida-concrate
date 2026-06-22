@@ -1,5 +1,4 @@
 "use client";
-import WidgetScript from "./components/WidgetScript";
 import { useState, useEffect, useRef } from "react";
 import { FadeIn, StaggerContainer, StaggerItem } from "./components/Animations";
 import WhyUsSection from "./components/WhyUsSection";
@@ -367,7 +366,6 @@ function InstagramSection() {
 export default function Home() {
   return (
     <main>
-      <WidgetScript />
       <Header />
       <section className="hero">
         <FadeIn className="hero__content">

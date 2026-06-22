@@ -1,5 +1,4 @@
 "use client";
-import WidgetScript from "../components/WidgetScript";
 import { useState, useEffect, useRef } from "react";
 import ReviewsSection from "../components/ReviewsSection";
 
@@ -224,7 +223,6 @@ function DetailsSection() {
 export default function AboutPage() {
   return (
     <main>
-      <WidgetScript />
       <Header />
       <HeroInternal />
       <DetailsSection />
