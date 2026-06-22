@@ -41,9 +41,9 @@ function TermsContent() {
           </p>
           <ul style={{ marginBottom: "2rem", paddingLeft: "1.5rem", listStyleType: "disc" }}>
             <li style={{ marginBottom: "0.5rem" }}><strong>Message Expectations &amp; Use Cases:</strong> Users who opt-in can expect to receive transaction-related messages (such as appointment confirmations, appointment reminders, scheduling updates, estimate details, pricing, invoices, and payment confirmations) and/or promotional messages (such as special offers, seasonal discounts, customer loyalty rewards, and re-engagement promotions), depending on the specific consent checkboxes selected upon submission.</li>
-            <li style={{ marginBottom: "0.5rem" }}><strong>Opt-Out / STOP Instructions:</strong> You can cancel the SMS service at any time. Just text STOP to +1 352-276-1680. After you send the SMS message STOP to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Opt-Out / STOP Instructions:</strong> You can cancel the SMS service at any time. Just text STOP to +1 (321) 497-0330. After you send the SMS message STOP to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us.</li>
             <li style={{ marginBottom: "0.5rem" }}><strong>Re-Subscribe / START Instructions:</strong> If you want to join again, just sign up as you did the first time, or text START to our number, and we will start sending SMS messages to you again based on your prior consent.</li>
-            <li style={{ marginBottom: "0.5rem" }}><strong>Help Instructions:</strong> If you are experiencing issues with the messaging program, you can reply with the keyword HELP for more assistance, or you can get help directly by contacting us at <a href="mailto:sales@flconcretecoating.com" style={{ color: "var(--teal)" }}>sales@flconcretecoating.com</a> or calling +1 352-276-1680.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Help Instructions:</strong> If you are experiencing issues with the messaging program, you can reply with the keyword HELP for more assistance, or you can get help directly by contacting us at <a href="mailto:sales@flconcretecoating.com" style={{ color: "var(--teal)" }}>sales@flconcretecoating.com</a> or calling +1 (321) 497-0330.</li>
             <li style={{ marginBottom: "0.5rem" }}><strong>Carrier Disclaimer:</strong> Carriers are not liable for delayed or undelivered messages.</li>
             <li style={{ marginBottom: "0.5rem" }}><strong>Rates and Frequency:</strong> Message and data rates may apply for any messages sent to you from us and to us from you. Message frequency varies based on your interaction with our services.</li>
           </ul>
@@ -77,7 +77,7 @@ function TermsContent() {
             <li style={{ marginBottom: "0.5rem" }}><strong>Legal Business Name:</strong> Florida Concrete Coating</li>
             <li style={{ marginBottom: "0.5rem" }}><strong>Physical Address:</strong> 1208 Payne Stewart Dr - Davenport - Florida</li>
             <li style={{ marginBottom: "0.5rem" }}><strong>Email Address:</strong> <a href="mailto:sales@flconcretecoating.com" style={{ color: "var(--teal)" }}>sales@flconcretecoating.com</a></li>
-            <li style={{ marginBottom: "0.5rem" }}><strong>Phone Number:</strong> (352) 276-1680</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Phone Number:</strong> (321) 497-0330</li>
           </ul>
 
         </div>

@@ -69,7 +69,7 @@ function PrivacyContent() {
           <h2 style={{ fontSize: "1.5rem", color: "var(--teal)", marginTop: "2.5rem", marginBottom: "1rem" }}>6. Your Rights and Opt-Out Options</h2>
           <ul style={{ marginBottom: "2rem", paddingLeft: "1.5rem", listStyleType: "disc" }}>
             <li style={{ marginBottom: "0.5rem" }}><strong>Emails:</strong> You can unsubscribe from our marketing emails at any time by clicking the "unsubscribe" link at the bottom of our emails.</li>
-            <li style={{ marginBottom: "0.5rem" }}><strong>Text Messages (SMS):</strong> You can completely revoke consent and opt out of receiving text messages at any time by replying STOP to any message received from us, or by texting STOP to +1 352-276-1680.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Text Messages (SMS):</strong> You can completely revoke consent and opt out of receiving text messages at any time by replying STOP to any message received from us, or by texting STOP to +1 (321) 497-0330.</li>
           </ul>
 
           <h2 style={{ fontSize: "1.5rem", color: "var(--teal)", marginTop: "2.5rem", marginBottom: "1rem" }}>7. Changes to This Privacy Policy</h2>
@@ -83,7 +83,7 @@ function PrivacyContent() {
             <li style={{ marginBottom: "0.5rem" }}><strong>Legal Business Name:</strong> Florida Concrete Coating LLC</li>
             <li style={{ marginBottom: "0.5rem" }}><strong>Physical Address:</strong> 1208 Payne Stewart Dr - Davenport Florida</li>
             <li style={{ marginBottom: "0.5rem" }}><strong>Email Address:</strong> <a href="mailto:sales@flconcretecoating.com" style={{ color: "var(--teal)" }}>sales@flconcretecoating.com</a></li>
-            <li style={{ marginBottom: "0.5rem" }}><strong>Phone Number:</strong> (352) 276-1680</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Phone Number:</strong> (321) 497-0330</li>
           </ul>
 
         </div>
