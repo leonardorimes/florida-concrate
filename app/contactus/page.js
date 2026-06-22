@@ -82,14 +82,12 @@ export default function ContactUs() {
       </div>
 
       <section style={{ maxWidth: "700px", margin: "0 auto", padding: "40px 20px 60px" }}>
-        <div style={{ background: "#fff", borderRadius: "16px", boxShadow: "0 4px 24px rgba(0,0,0,0.08)", overflow: "hidden", padding: "40px", textAlign: "center" }}>
-          <h2>Form temporarily disabled for A2P Compliance.</h2>
-          <p>Please call us directly at <strong>(321) 497-0330</strong> to get your free estimate.</p>
-          {/*
-          <div style={{ overflow: "hidden" }}>
+        <div style={{ background: "#fff", borderRadius: "16px", boxShadow: "0 4px 24px rgba(0,0,0,0.08)", overflow: "hidden" }}>
+          <div style={{ overflow: "hidden", height: "600px" }}>
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/GyeMDbEFUVXObVeuHNyp"
-              id="inline-GyeMDbEFUVXObVeuHNyp"
+              style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px" }}
+              id="inline-GyeMDbEFUVXObVeuHNyp" 
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
               data-trigger-value=""
@@ -101,13 +99,11 @@ export default function ContactUs() {
               data-height="999"
               data-layout-iframe-id="inline-GyeMDbEFUVXObVeuHNyp"
               data-form-id="GyeMDbEFUVXObVeuHNyp"
-              title="Get Your Free Estimate Form"
-              style={{ display: "block", width: "125%", minHeight: "600px", border: "none", borderRadius: "10px", transform: "scale(0.8)", transformOrigin: "top left" }}
+              title="Website Form"
             />
           </div>
-          */}
         </div>
-        {/* <script src="https://link.msgsndr.com/js/form_embed.js" async /> */}
+        <script src="https://link.msgsndr.com/js/form_embed.js" />
       </section>
 
       <footer className="site-footer">
