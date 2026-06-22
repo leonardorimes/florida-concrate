@@ -4,8 +4,8 @@ export default function ContactUs() {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Schedule Your Free Estimate | Florida Concrete Coating</title>
-        <meta name="description" content="Schedule a free on-site estimate with Florida Concrete Coating. Book a time that works for you in Davenport, FL." />
+        <title>Get Your Free Estimate | Florida Concrete Coating</title>
+        <meta name="description" content="Request a free estimate for garage floor, patio, or pool deck coatings in Davenport, FL. Fast response within 24 hours." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -14,39 +14,40 @@ export default function ContactUs() {
           body { font-family: 'Inter', Arial, sans-serif; background: #f5f5f5; color: #111; }
 
           /* NAV */
-          .nav { background: #025f83; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; position: sticky; top: 0; z-index: 100; }
-          .nav__logo { color: #fff; font-size: 1.1rem; font-weight: 700; text-decoration: none; letter-spacing: -0.3px; }
+          .nav { background: #025f83; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
+          .nav__logo { color: #fff; font-size: 1.05rem; font-weight: 700; text-decoration: none; }
           .nav__links { display: flex; gap: 24px; list-style: none; }
-          .nav__links a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+          .nav__links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.88rem; font-weight: 500; }
           .nav__links a:hover { color: #fff; }
-          .nav__cta { background: #ff7028; color: #fff; padding: 8px 18px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; text-decoration: none; }
+          .nav__cta { background: #ff7028; color: #fff; padding: 8px 18px; border-radius: 6px; font-weight: 600; font-size: 0.85rem; text-decoration: none; white-space: nowrap; }
           .nav__cta:hover { background: #e0601f; }
           @media (max-width: 640px) { .nav__links { display: none; } }
 
           /* HERO */
-          .hero { background: linear-gradient(135deg, #025f83 0%, #014f6e 100%); padding: 60px 24px 50px; text-align: center; color: #fff; }
-          .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 12px; }
-          .hero p { font-size: 1.05rem; opacity: 0.88; max-width: 500px; margin: 0 auto; }
+          .hero { background: linear-gradient(135deg, #025f83 0%, #014f6e 100%); padding: 56px 24px 44px; text-align: center; color: #fff; }
+          .hero h1 { font-size: clamp(1.7rem, 4vw, 2.6rem); font-weight: 700; margin-bottom: 12px; }
+          .hero p { font-size: 1rem; opacity: 0.88; max-width: 480px; margin: 0 auto; }
 
-          /* TRUST BADGES */
-          .trust { display: flex; justify-content: center; gap: 32px; padding: 20px 24px; background: #fff; border-bottom: 1px solid #e8e8e8; flex-wrap: wrap; }
-          .trust__item { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; color: #444; font-weight: 500; }
-          .trust__check { color: #025f83; font-size: 1rem; }
+          /* TRUST */
+          .trust { display: flex; justify-content: center; gap: 28px; padding: 16px 24px; background: #fff; border-bottom: 1px solid #e8e8e8; flex-wrap: wrap; }
+          .trust span { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: #444; font-weight: 500; }
+          .trust .check { color: #025f83; }
 
-          /* CALENDAR SECTION */
-          .calendar-section { max-width: 860px; margin: 0 auto; padding: 40px 20px 60px; }
-          .calendar-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); overflow: hidden; }
-          .calendar-card iframe { display: block; width: 100%; border: none; min-height: 750px; }
+          /* FORM SECTION */
+          .form-section { max-width: 700px; margin: 0 auto; padding: 40px 20px 60px; }
+          .form-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); overflow: hidden; }
+          .form-card iframe { display: block; width: 125%; min-height: 600px; border: none; border-radius: 10px; transform: scale(0.8); transform-origin: top left; }
+          .form-wrapper { overflow: hidden; }
 
           /* FOOTER */
-          .footer { background: #111; color: rgba(255,255,255,0.7); text-align: center; padding: 28px 24px; font-size: 0.82rem; }
-          .footer a { color: rgba(255,255,255,0.6); text-decoration: none; margin: 0 8px; }
+          .footer { background: #111; color: rgba(255,255,255,0.65); text-align: center; padding: 28px 24px; font-size: 0.8rem; }
+          .footer a { color: rgba(255,255,255,0.55); text-decoration: none; margin: 0 8px; }
           .footer a:hover { color: #fff; }
-          .footer__top { margin-bottom: 8px; }
+          .footer p { margin-bottom: 6px; }
         `}} />
+        <script src="https://link.msgsndr.com/js/form_embed.js" async />
       </head>
       <body>
-        {/* NAVIGATION */}
         <header>
           <nav className="nav">
             <a href="/" className="nav__logo">Florida Concrete Coating</a>
@@ -59,37 +60,43 @@ export default function ContactUs() {
           </nav>
         </header>
 
-        {/* HERO */}
         <section className="hero">
-          <h1>Schedule Your Free Estimate</h1>
-          <p>Pick a time that works for you. Our team confirms all details within 24 hours.</p>
+          <h1>Get Your Free Estimate</h1>
+          <p>Fill out the form below. Our team will get back to you with a fast, accurate estimate within 24 hours.</p>
         </section>
 
-        {/* TRUST BADGES */}
         <div className="trust">
-          <span className="trust__item"><span className="trust__check">✔</span> Free on-site estimate</span>
-          <span className="trust__item"><span className="trust__check">✔</span> Same-day installs available</span>
-          <span className="trust__item"><span className="trust__check">✔</span> Licensed &amp; insured</span>
-          <span className="trust__item"><span className="trust__check">✔</span> 5-year workmanship warranty</span>
+          <span><span className="check">✔</span> Free on-site estimate</span>
+          <span><span className="check">✔</span> Same-day installs available</span>
+          <span><span className="check">✔</span> Licensed &amp; insured</span>
+          <span><span className="check">✔</span> 5-year warranty</span>
         </div>
 
-        {/* BOOKING CALENDAR */}
-        <main className="calendar-section">
-          <div className="calendar-card">
-            <iframe
-              src="https://api.leadconnectorhq.com/widget/booking/imvE2dXeqosMsfYymEac"
-              scrolling="no"
-              id="imvE2dXeqosMsfYymEac_contact"
-              title="Schedule Free Estimate"
-            />
+        <main className="form-section">
+          <div className="form-card">
+            <div className="form-wrapper">
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/GyeMDbEFUVXObVeuHNyp"
+                id="inline-GyeMDbEFUVXObVeuHNyp"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Website Form"
+                data-height="999"
+                data-layout-iframe-id="inline-GyeMDbEFUVXObVeuHNyp"
+                data-form-id="GyeMDbEFUVXObVeuHNyp"
+                title="Get Your Free Estimate Form"
+              />
+            </div>
           </div>
         </main>
 
-        {/* FOOTER */}
         <footer className="footer">
-          <div className="footer__top">
-            Florida Concrete Coating LLC &mdash; 1208 Payne Stewart Dr, Davenport, FL
-          </div>
+          <p>Florida Concrete Coating LLC &mdash; 1208 Payne Stewart Dr, Davenport, FL</p>
           <div>
             <a href="/privacypolicy">Privacy Policy</a>
             <a href="/termsofservice">Terms of Service</a>
