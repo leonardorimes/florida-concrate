@@ -412,14 +412,7 @@ export default function Home() {
             </div>
           </div>
         </FadeIn>
-        <button className="chat-button" aria-label="Open chat">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M20.5 11.6a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.1-.8L4 21l1.5-4A8.3 8.3 0 1 1 20.5 11.6Z" />
-            <circle cx="9" cy="12" r=".8" />
-            <circle cx="12" cy="12" r=".8" />
-            <circle cx="15" cy="12" r=".8" />
-          </svg>
-        </button>
+
       </section>
       <Expertise />
       <StepsSection />
