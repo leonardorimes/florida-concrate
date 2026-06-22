@@ -26,8 +26,10 @@ export default function Footer() {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="#quote">Get Free Estimate</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="/contactus">Get Free Estimate</a></li>
+            <li><a href="/booking">Schedule Meeting</a></li>
+            <li><a href="/privacypolicy">Privacy Policy</a></li>
+            <li><a href="/termsofservice">Terms of Service</a></li>
           </ul>
         </div>
 
@@ -66,7 +68,7 @@ export default function Footer() {
             </li>
             <li>
                <Phone />
-              <a href="tel:8632018314">(863) 201-8314</a>
+              <a href="tel:13214970330">(321) 497-0330</a>
             </li>
             <li className="address-line">
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>

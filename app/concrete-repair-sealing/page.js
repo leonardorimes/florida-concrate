@@ -79,11 +79,11 @@ function Header() {
           <a href="/about">About Us</a>
         </nav>
         <div className="header-actions">
-          <a className="quote-link" href="#quote">
+          <a className="quote-link" href="/contactus">
             Get Free Quote
           </a>
-          <a className="phone-link" href="tel:8632018314">
-            <Phone /> (863) 201-8314
+          <a className="phone-link" href="tel:13214970330">
+            <Phone /> (321) 497-0330
           </a>
         </div>
       </div>
@@ -108,7 +108,7 @@ function CTASection() {
           </button>
           <h3>Ready to get started?</h3>
           <p>Get a free quote / book now</p>
-          <a href="#quote" className="cta-banner__btn">Get Free Estimate</a>
+          <a href="/contactus" className="cta-banner__btn">Get Free Estimate</a>
         </div>
       </div>
     </section>
@@ -128,7 +128,7 @@ function Footer() {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="#quote">Get Free Estimate</a></li>
+            <li><a href="/contactus">Get Free Estimate</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
@@ -168,7 +168,7 @@ function Footer() {
             </li>
             <li>
                <Phone />
-              <a href="tel:8632018314">(863) 201-8314</a>
+              <a href="tel:13214970330">(321) 497-0330</a>
             </li>
             <li className="address-line">
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
@@ -224,7 +224,7 @@ function DetailsSection() {
             <li><CheckIcon /> Prolongs the life of your concrete</li>
             <li><CheckIcon /> Ideal for driveways, patios &amp; walkways</li>
           </ul>
-          <a href="#quote" className="btn-primary">Get a free estimate</a>
+          <a href="/contactus" className="btn-primary">Get a free estimate</a>
         </div>
       </div>
     </section>
@@ -254,7 +254,7 @@ function RecentWorks() {
           <img width="800" height="600" loading="lazy" src="/Our%20Recent_3.jpg" alt="Recent work 3" />
         </div>
         <div className="recent-works__action">
-          <a href="#quote" className="btn-secondary">Get a free estimate</a>
+          <a href="/contactus" className="btn-secondary">Get a free estimate</a>
         </div>
       </div>
     </section>

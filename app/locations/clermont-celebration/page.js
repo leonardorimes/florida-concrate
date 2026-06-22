@@ -80,11 +80,11 @@ function Header() {
           <a href="/about">About Us</a>
         </nav>
         <div className="header-actions">
-          <a className="quote-link" href="#quote">
+          <a className="quote-link" href="/contactus">
             Get Free Quote
           </a>
-          <a className="phone-link" href="tel:8632018314">
-            <Phone /> (863) 201-8314
+          <a className="phone-link" href="tel:13214970330">
+            <Phone /> (321) 497-0330
           </a>
         </div>
       </div>
@@ -109,7 +109,7 @@ function CTASection() {
           </button>
           <h3>Ready to get started?</h3>
           <p>Get a free quote / book now</p>
-          <a href="#quote" className="cta-banner__btn">Get Free Estimate</a>
+          <a href="/contactus" className="cta-banner__btn">Get Free Estimate</a>
         </div>
       </div>
     </section>
@@ -129,7 +129,7 @@ function Footer() {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="#quote">Get Free Estimate</a></li>
+            <li><a href="/contactus">Get Free Estimate</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
@@ -169,7 +169,7 @@ function Footer() {
             </li>
             <li>
                <Phone />
-              <a href="tel:8632018314">(863) 201-8314</a>
+              <a href="tel:13214970330">(321) 497-0330</a>
             </li>
             <li className="address-line">
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
@@ -218,7 +218,7 @@ function DetailsSection() {
           <h2 style={{ fontSize: "36px", marginBottom: "20px", color: "var(--teal)" }}>Your Trusted Concrete Coating Experts in Clermont &amp; Celebration</h2>
           <p style={{ marginBottom: "20px", color: "#555", lineHeight: "1.6" }}>We proudly provide professional concrete coating services throughout Clermont, Celebration, and surrounding areas. Whether you're upgrading your garage, improving your pool deck, or protecting your driveway, our team delivers long-lasting results built to handle Florida's heat, humidity, and daily wear.</p>
           <p style={{ marginBottom: "30px", color: "#555", lineHeight: "1.6" }}>Our coatings are designed to resist moisture, prevent cracks, and maintain a clean, polished look for years—giving your concrete surfaces durability and easy maintenance.</p>
-          <a href="#quote" className="btn-primary">Get Free Estimate</a>
+          <a href="/contactus" className="btn-primary">Get Free Estimate</a>
         </div>
         <div className="details-section__image-wrap">
           <a href="https://www.google.com/maps/search/?api=1&query=Google&query_place_id=ChIJswGnatF43YgR1YegTrFBtXo" target="_blank" rel="noopener noreferrer">
@@ -285,7 +285,7 @@ function StepsSection() {
         </StaggerContainer>
 
         <div className="process__cta-wrap">
-          <a className="process__cta" href="#quote" style={{ background: "#fff", color: "var(--teal)" }}>
+          <a className="process__cta" href="/contactus" style={{ background: "#fff", color: "var(--teal)" }}>
             Get Free Estimate
           </a>
         </div>

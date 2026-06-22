@@ -28,72 +28,6 @@ const Wrench = () => (
 
 
 
-function QuoteForm() {
-  const containerRef = useRef(null);
-  const iframeRef = useRef(null);
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://link.msgsndr.com/js/form_embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {};
-  }, []);
-
-  useEffect(() => {
-    if (!iframeRef.current || !containerRef.current) return;
-    
-    const observer = new ResizeObserver((entries) => {
-      for (let entry of entries) {
-        const height = entry.contentRect.height;
-        if (height > 0) {
-          // O formulário é escalado para 80%, então a altura do container deve ser 80% da altura do iframe
-          containerRef.current.style.height = `${height * 0.8}px`;
-        }
-      }
-    });
-
-    observer.observe(iframeRef.current);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div 
-      className="quote-card" 
-      id="quote" 
-      ref={containerRef}
-      style={{ padding: 0, overflow: "hidden", display: "block" }}
-    >
-      <iframe
-        ref={iframeRef}
-        src="https://api.leadconnectorhq.com/widget/form/GyeMDbEFUVXObVeuHNyp"
-        style={{ 
-          width: "125%", 
-          minHeight: "400px", 
-          border: "none", 
-          borderRadius: "10px",
-          transform: "scale(0.8)",
-          transformOrigin: "top left"
-        }}
-        id="inline-GyeMDbEFUVXObVeuHNyp" 
-        data-layout="{'id':'INLINE'}"
-        data-trigger-type="alwaysShow"
-        data-trigger-value=""
-        data-activation-type="alwaysActivated"
-        data-activation-value=""
-        data-deactivation-type="neverDeactivate"
-        data-deactivation-value=""
-        data-form-name="Website Form"
-        data-height="999"
-        data-layout-iframe-id="inline-GyeMDbEFUVXObVeuHNyp"
-        data-form-id="GyeMDbEFUVXObVeuHNyp"
-        title="Website Form"
-      />
-    </div>
-  );
-}
-
 function Expertise() {
   return (
     <section className="expertise" id="about">
@@ -182,7 +116,7 @@ function StepsSection() {
         </StaggerContainer>
 
         <div className="process__cta-wrap">
-          <a className="process__cta" href="#quote">
+          <a className="process__cta" href="/contactus">
             Get Free Estimate
           </a>
         </div>
@@ -269,7 +203,7 @@ function ServicesSection() {
         </StaggerContainer>
 
         <FadeIn className="services__cta-wrap">
-          <a className="services__cta" href="#quote">
+          <a className="services__cta" href="/contactus">
             Get Free Estimate
           </a>
         </FadeIn>
@@ -429,7 +363,6 @@ function InstagramSection() {
 }
 
 
-
 export default function Home() {
   return (
     <main>
@@ -460,8 +393,15 @@ export default function Home() {
               <li>Same day install</li>
               <li>We&apos;re license and insured</li>
             </ul>
+            <div style={{ marginTop: "40px", display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
+              <a href="/contactus" className="services__cta">
+                Get Free Estimate
+              </a>
+              <a href="tel:13214970330" className="hero__cta-secondary">
+                <Phone /> Call Us Now
+              </a>
+            </div>
           </div>
-          <QuoteForm />
         </FadeIn>
         <button className="chat-button" aria-label="Open chat">
           <svg viewBox="0 0 24 24" aria-hidden="true">

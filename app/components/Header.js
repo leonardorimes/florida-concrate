@@ -61,13 +61,14 @@ export default function Header() {
           </div>
 
           <a href="/about">About Us</a>
+          <a href="/booking">Schedule Meeting</a>
         </nav>
         <div className="header-actions">
-          <a className="quote-link" href="#quote">
+          <a className="quote-link" href="/contactus">
             Get Free Quote
           </a>
-          <a className="phone-link" href="tel:8632018314">
-            <Phone /> (863) 201-8314
+          <a className="phone-link" href="tel:13214970330">
+            <Phone /> (321) 497-0330
           </a>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function CTASection() {
           </button>
           <h3>Ready to get started?</h3>
           <p>Get a free quote / book now</p>
-          <a href="#quote" className="cta-banner__btn">Get Free Estimate</a>
+          <a href="/contactus" className="cta-banner__btn">Get Free Estimate</a>
         </div>
       </div>
     </section>
