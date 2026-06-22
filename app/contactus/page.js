@@ -70,7 +70,7 @@ export default function ContactUs() {
         <div className="hero-internal__overlay" style={{ background: "transparent" }}></div>
         <div className="hero-internal__content">
           <h1>Get Your Free<br/>Estimate</h1>
-          <p>Fill out the form below. Our team will get back to you with a fast, accurate estimate within 24 hours.</p>
+          <p>Provide your details below. Our team will get back to you with a fast, accurate estimate within 24 hours.</p>
         </div>
       </section>
 
@@ -85,7 +85,7 @@ export default function ContactUs() {
         <div style={{ background: "#fff", borderRadius: "16px", boxShadow: "0 4px 24px rgba(0,0,0,0.08)", overflow: "hidden" }}>
           {/* TEMPORARY HIDE FOR A2P COMPLIANCE */}
           <div style={{ padding: "40px", textAlign: "center" }}>
-            <h2>Form temporarily disabled for A2P Compliance.</h2>
+            <h2>Estimates temporarily disabled for A2P Compliance.</h2>
             <p>Please call us directly at <strong>(321) 497-0330</strong> to get your free estimate.</p>
           </div>
           {/*

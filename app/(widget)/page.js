@@ -88,8 +88,8 @@ function StepsSection() {
             <h3>Step 1</h3>
             <h4>Request a quote</h4>
             <p>
-              Tell us about your concrete coating needs by filling out our quick
-              form. Whether it's a garage, patio, or commercial space, we'll
+              Tell us about your concrete coating needs by sending a quick
+              request. Whether it's a garage, patio, or commercial space, we'll
               provide you with a fast, accurate estimate within 24 hours.
             </p>
           </StaggerItem>
@@ -421,7 +421,9 @@ export default function Home() {
       <ReviewsSection city="[city]" />
       <FAQSection />
       <ResultsSection />
+      {/* TEMPORARILY DISABLED FOR A2P COMPLIANCE (false positive from Elfsight iframe)
       <InstagramSection />
+      */}
       <CTASection />
       <Footer />
     </main>
