@@ -83,10 +83,10 @@ export default function ContactUs() {
 
       <section style={{ maxWidth: "700px", margin: "0 auto", padding: "40px 20px 60px" }}>
         <div style={{ background: "#fff", borderRadius: "16px", boxShadow: "0 4px 24px rgba(0,0,0,0.08)", overflow: "hidden" }}>
-          <div style={{ overflow: "hidden", height: "600px" }}>
+          <div style={{ width: "100%", minHeight: "600px" }}>
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/GyeMDbEFUVXObVeuHNyp"
-              style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px" }}
+              style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px", minHeight: "800px" }}
               id="inline-GyeMDbEFUVXObVeuHNyp" 
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
