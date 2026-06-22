@@ -162,7 +162,7 @@ a {
   border-radius: 0 0 76px 76px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.72)),
-    url("/garage-epoxy-hero.png");
+    url("/garage-epoxy-hero.webp");
   background-position: center;
   background-size: cover;
 }
@@ -173,12 +173,72 @@ a {
   width: min(1140px, calc(100% - 48px));
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 550px 520px;
+  grid-template-columns: 1fr 420px;
   gap: 50px;
+  align-items: center;
+  padding: 130px 0 80px;
 }
 
+/* Right column CTA card */
+.hero-cta-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero-cta-card {
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 20px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.hero-cta-card__lead {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hero-cta-card__btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-cta-card__btn-secondary {
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-trust {
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.hero-trust li {
+  color: rgba(255, 255, 255, 0.80);
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+
 .hero-copy {
-  padding-top: 125px;
   color: #fff;
 }
 
@@ -792,12 +852,22 @@ h1 strong {
   }
 
   .hero__content {
-    grid-template-columns: minmax(0, 550px);
+    grid-template-columns: 1fr;
     justify-content: center;
+    padding: 90px 0 60px;
+  }
+
+  .hero-cta-col {
+    display: none;
   }
 
   .hero-copy {
-    padding-top: 70px;
+    padding-top: 0;
+  }
+
+  /* Show inline CTAs on mobile since card is hidden */
+  .hero-copy::after {
+    display: block;
   }
 
   .quote-card {

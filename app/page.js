@@ -56,11 +56,11 @@ function Expertise() {
 
         <div className="expertise__gallery">
           <img
-            src="/owner-joao.png"
+            src="/owner-joao.webp"
             alt="Owner João Luiz in front of a coated garage"
           />
           <img
-            src="/epoxy-detail.png"
+            src="/epoxy-detail.webp"
             alt="Detailed gray flake epoxy floor coating"
           />
         </div>
@@ -298,7 +298,7 @@ function FAQSection() {
             <FAQAccordion items={faqData} />
           </div>
           <div className="faq__right">
-            <img width="800" height="600" loading="lazy" src="/owner-joao.png" alt="Owner standing in garage" className="faq__image" />
+            <img width="800" height="600" loading="lazy" src="/owner-joao.webp" alt="Owner standing in garage" className="faq__image" />
           </div>
         </div>
       </div>
@@ -326,11 +326,11 @@ function ResultsSection() {
         <StaggerContainer className="results__grid">
           <StaggerItem className="result-column result-column--before">
             <h3>Before</h3>
-            <img width="800" height="600" loading="lazy" src="/FL CONCRETE/before.jpg" alt="Before coating" className="result-image" />
+            <img width="800" height="600" loading="lazy" src="/FL CONCRETE/before.webp" alt="Before coating" className="result-image" />
           </StaggerItem>
           <StaggerItem className="result-column result-column--after">
             <h3>After</h3>
-            <img width="800" height="600" loading="lazy" src="/FL CONCRETE/after.jpg" alt="After coating" className="result-image" />
+            <img width="800" height="600" loading="lazy" src="/FL CONCRETE/after.webp" alt="After coating" className="result-image" />
           </StaggerItem>
         </StaggerContainer>
       </div>
@@ -369,6 +369,7 @@ export default function Home() {
       <Header />
       <section className="hero">
         <FadeIn className="hero__content">
+          {/* LEFT — headline + intro + benefits */}
           <div className="hero-copy">
             <div className="eyebrow">
               <b>★</b> Davenport Epoxy Floor Expert
@@ -384,22 +385,30 @@ export default function Home() {
               Trusted by Davenport homeowners for premium epoxy garage
               <br className="desktop-break" />
               floor coatings that last a lifetime at prices that won&apos;t
-              break the
-              <br className="desktop-break" />
-              bank
+              break the bank.
             </p>
             <ul className="benefits">
               <li>Quick &amp; easy quotes</li>
               <li>Same day install</li>
-              <li>We&apos;re license and insured</li>
+              <li>Licensed &amp; insured</li>
             </ul>
-            <div style={{ marginTop: "40px", display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
-              <a href="/contactus" className="services__cta">
+          </div>
+
+          {/* RIGHT — CTAs + trust badges */}
+          <div className="hero-cta-col">
+            <div className="hero-cta-card">
+              <p className="hero-cta-card__lead">Ready to transform your floor?</p>
+              <a href="/contactus" className="services__cta hero-cta-card__btn">
                 Get Free Estimate
               </a>
-              <a href="tel:13214970330" className="hero__cta-secondary">
-                <Phone /> Call Us Now
+              <a href="tel:13214970330" className="hero__cta-secondary hero-cta-card__btn-secondary">
+                <Phone /> (321) 497-0330
               </a>
+              <ul className="hero-trust">
+                <li>✔ Free on-site estimate</li>
+                <li>✔ Same-day installs available</li>
+                <li>✔ 5-year workmanship warranty</li>
+              </ul>
             </div>
           </div>
         </FadeIn>
