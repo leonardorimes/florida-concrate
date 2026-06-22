@@ -424,8 +424,6 @@ export default function Home() {
       <InstagramSection />
       <CTASection />
       <Footer />
-      {/* LeadConnector Chat Widget embedded directly in the page */}
-      <script dangerouslySetInnerHTML={{ __html: `</script><script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a39497ecab3f1c1716ac3e8" data-source="WEB_USER" async></script><script>` }} />
     </main>
   );
 }
