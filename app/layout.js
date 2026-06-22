@@ -1,5 +1,4 @@
 import "./globals.css";
-import ChatWidget from "./components/ChatWidget";
 
 export const metadata = {
   metadataBase: new URL('https://florida-concrete.vercel.app'),
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
         {children}
-        <ChatWidget />
       </body>
     </html>
   );

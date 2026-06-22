@@ -1,4 +1,5 @@
 "use client";
+import WidgetScript from "../../components/WidgetScript";
 import { FadeIn, StaggerContainer, StaggerItem } from "../../components/Animations";
 import { useState, useEffect, useRef } from "react";
 import WhyUsSection from "../../components/WhyUsSection";
@@ -298,6 +299,7 @@ function StepsSection() {
 export default function KissimmeePage() {
   return (
     <main>
+      <WidgetScript />
       <Header />
       <HeroInternal />
       <DetailsSection />

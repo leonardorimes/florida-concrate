@@ -1,4 +1,5 @@
 "use client";
+import WidgetScript from "../components/WidgetScript";
 import { useState, useEffect, useRef } from "react";
 import WhyUsSection from "../components/WhyUsSection";
 import ReviewsSection from "../components/ReviewsSection";
@@ -265,6 +266,7 @@ function RecentWorks() {
 export default function CommercialFloorCoatingsPage() {
   return (
     <main>
+      <WidgetScript />
       <Header />
       <HeroInternal />
       <DetailsSection />
