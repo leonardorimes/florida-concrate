@@ -83,12 +83,6 @@ export default function ContactUs() {
 
       <section style={{ maxWidth: "700px", margin: "0 auto", padding: "40px 20px 60px" }}>
         <div style={{ background: "#fff", borderRadius: "16px", boxShadow: "0 4px 24px rgba(0,0,0,0.08)", overflow: "hidden" }}>
-          {/* TEMPORARY HIDE FOR A2P COMPLIANCE */}
-          <div style={{ padding: "40px", textAlign: "center" }}>
-            <h2>Estimates temporarily disabled for A2P Compliance.</h2>
-            <p>Please call us directly at <strong>(321) 497-0330</strong> to get your free estimate.</p>
-          </div>
-          {/*
           <div style={{ width: "100%", minHeight: "600px" }}>
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/GyeMDbEFUVXObVeuHNyp"
@@ -108,9 +102,13 @@ export default function ContactUs() {
               title="Website Form"
             />
           </div>
-          */}
+          <div style={{ padding: "0 24px 24px 24px", textAlign: "center" }}>
+            <p style={{ fontSize: "0.8rem", color: "#666", lineHeight: "1.5", margin: 0 }}>
+              * By providing your phone number and submitting this form, you agree to receive text messages from Florida Concrete Coating regarding your estimate, service updates, and occasional promotional offers. Message and data rates may apply. Reply STOP to cancel at any time. For more details, view our <a href="/privacypolicy" style={{ color: "var(--teal)", textDecoration: "underline" }}>Privacy Policy</a>.
+            </p>
+          </div>
         </div>
-        {/* <script src="https://link.msgsndr.com/js/form_embed.js" async /> */}
+        <script src="https://link.msgsndr.com/js/form_embed.js" async></script>
       </section>
 
       <footer className="site-footer">
