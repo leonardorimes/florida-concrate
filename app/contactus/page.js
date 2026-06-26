@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function ContactUs() {
   return (
     <main>
@@ -81,7 +83,28 @@ export default function ContactUs() {
         <span style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "0.8rem", color: "#444", fontWeight: "500" }}><span style={{ color: "#025f83" }}>✔</span> 5-year warranty</span>
       </div>
 
-      <section style={{ maxWidth: "700px", margin: "0 auto", padding: "40px 20px 60px" }}>
+      <section style={{ maxWidth: "800px", margin: "0 auto", padding: "40px 20px 60px" }}>
+        <div style={{ background: "#fff", borderRadius: "16px", boxShadow: "0 4px 24px rgba(0,0,0,0.08)", overflow: "hidden", padding: "40px", marginBottom: "40px" }}>
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/fxNFOkfyv30UWrRYZloB"
+            style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px", minHeight: "600px" }}
+            id="inline-fxNFOkfyv30UWrRYZloB" 
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Website Form"
+            data-height="961"
+            data-layout-iframe-id="inline-fxNFOkfyv30UWrRYZloB"
+            data-form-id="fxNFOkfyv30UWrRYZloB"
+            title="Website Form"
+          />
+          <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="lazyOnload" />
+        </div>
+
         <div style={{ background: "#fff", borderRadius: "16px", boxShadow: "0 4px 24px rgba(0,0,0,0.08)", overflow: "hidden", padding: "40px", textAlign: "center" }}>
           <h2 style={{ color: "var(--teal)", marginBottom: "20px", fontSize: "2rem" }}>Florida Concrete Coating</h2>
           
