@@ -12,7 +12,7 @@ export default function QuoteForm() {
           <svg viewBox="0 0 24 24" aria-hidden="true" style={{ width: 20, height: 20, fill: "none", stroke: "var(--teal)", strokeWidth: 2 }}>
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
           </svg>
-          1200 Payne Stewart Dr, Davenport 33896
+          1200 Payne Stewart Dr, Central Florida 33896
         </p>
         
         <p style={{ display: "flex", alignItems: "center", gap: "10px", margin: 0 }}>

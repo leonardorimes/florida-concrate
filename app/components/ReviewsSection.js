@@ -18,7 +18,7 @@ const reviews = [
   }
 ];
 
-export default function ReviewsSection({ className = "reviews", city = "Davenport" }) {
+export default function ReviewsSection({ className = "reviews", city = "Central Florida" }) {
   return (
     <section className={className} id="reviews">
       <div className="reviews__inner">

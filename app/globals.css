@@ -912,7 +912,7 @@ h1 strong {
   }
 
   h1 {
-    font-size: clamp(38px, 11vw, 51px);
+    font-size: clamp(32px, 9.5vw, 51px);
   }
 
   .desktop-break {

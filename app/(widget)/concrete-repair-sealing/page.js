@@ -172,7 +172,7 @@ function Footer() {
             </li>
             <li className="address-line">
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
-              <span>1200 Payne Stewart Dr, Davenport 33896</span>
+              <span>1200 Payne Stewart Dr, Central Florida 33896</span>
             </li>
           </ul>
 
@@ -193,7 +193,7 @@ function HeroInternal() {
     <section className="hero-internal" style={{ backgroundImage: "url('/FL%20CONCRETE/Imagem-do-WhatsApp-de-2025-09-29-as-13.28.47_64c15703.jpg')" }}>
       <div className="hero-internal__overlay"></div>
       <div className="hero-internal__content">
-        <h1>Concrete Repair &amp; Sealing in<br/>Davenport, FL</h1>
+        <h1>Concrete Repair &amp; Sealing in<br/>Central Florida</h1>
         <p>Fix cracks, spalling, and uneven surfaces to prolong the life of your concrete and prevent further damage with our professional repair and sealing services.</p>
       </div>
     </section>
@@ -269,7 +269,7 @@ export default function ConcreteRepairSealingPage() {
       <DetailsSection />
       <RecentWorks />
       <WhyUsSection className="why-us why-us--white" />
-      <ReviewsSection className="reviews reviews--white" city="Davenport" />
+      <ReviewsSection className="reviews reviews--white" city="Central Florida" />
       <CTASection />
       <Footer />
     </main>

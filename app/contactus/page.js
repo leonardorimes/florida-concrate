@@ -92,7 +92,7 @@ export default function ContactUs() {
               <svg viewBox="0 0 24 24" aria-hidden="true" style={{ width: 24, height: 24, fill: "none", stroke: "var(--teal)", strokeWidth: 2 }}>
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
               </svg>
-              1200 Payne Stewart Dr, Davenport 33896
+              1200 Payne Stewart Dr, Central Florida 33896
             </p>
             
             <p style={{ display: "flex", alignItems: "center", gap: "10px", margin: 0 }}>
@@ -183,7 +183,7 @@ export default function ContactUs() {
               </li>
               <li className="address-line">
                 <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
-                <span>1200 Payne Stewart Dr, Davenport 33896</span>
+                <span>1200 Payne Stewart Dr, Central Florida 33896</span>
               </li>
             </ul>
 

@@ -75,7 +75,7 @@ function TermsContent() {
           <p style={{ marginBottom: "0.5rem" }}>If you have any questions about these Terms of Service, please contact us at:</p>
           <ul style={{ paddingLeft: "1.5rem", listStyleType: "none", marginLeft: 0 }}>
             <li style={{ marginBottom: "0.5rem" }}><strong>Legal Business Name:</strong> Florida Concrete Coating</li>
-            <li style={{ marginBottom: "0.5rem" }}><strong>Physical Address:</strong> 1208 Payne Stewart Dr - Davenport - Florida</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Physical Address:</strong> 1208 Payne Stewart Dr - Central Florida</li>
             <li style={{ marginBottom: "0.5rem" }}><strong>Email Address:</strong> <a href="mailto:sales@flconcretecoating.com" style={{ color: "var(--teal)" }}>sales@flconcretecoating.com</a></li>
             <li style={{ marginBottom: "0.5rem" }}><strong>Phone Number:</strong> (321) 497-0330</li>
           </ul>

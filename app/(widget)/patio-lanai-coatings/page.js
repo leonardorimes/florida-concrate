@@ -172,7 +172,7 @@ function Footer() {
             </li>
             <li className="address-line">
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
-              <span>1200 Payne Stewart Dr, Davenport 33896</span>
+              <span>1200 Payne Stewart Dr, Central Florida 33896</span>
             </li>
           </ul>
 
@@ -193,7 +193,7 @@ function HeroInternal() {
     <section className="hero-internal">
       <div className="hero-internal__overlay"></div>
       <div className="hero-internal__content">
-        <h1>Patio &amp; Lanai Coatings in<br/>Davenport, FL That Last</h1>
+        <h1>Patio &amp; Lanai Coatings in<br/>Central Florida That Last</h1>
         <p>Transform your outdoor space with durable, stunning polyurea polyaspartic coatings built to handle Florida weather, UV rays, and everyday use.</p>
       </div>
     </section>
@@ -270,7 +270,7 @@ export default function PatioLanaiCoatingsPage() {
       <DetailsSection />
       <RecentWorks />
       <WhyUsSection className="why-us why-us--white" />
-      <ReviewsSection className="reviews reviews--white" city="Davenport" />
+      <ReviewsSection className="reviews reviews--white" city="Central Florida" />
       <CTASection />
       <Footer />
     </main>

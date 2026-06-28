@@ -172,7 +172,7 @@ function Footer() {
             </li>
             <li className="address-line">
               <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
-              <span>1200 Payne Stewart Dr, Davenport 33896</span>
+              <span>1200 Payne Stewart Dr, Central Florida 33896</span>
             </li>
           </ul>
 
@@ -193,7 +193,7 @@ function HeroInternal() {
     <section className="hero-internal">
       <div className="hero-internal__overlay"></div>
       <div className="hero-internal__content">
-        <h1>Garage Floor Coating in<br/>Davenport, FL That's Built to Last</h1>
+        <h1>Garage Floor Coating in<br/>Central Florida That's Built to Last</h1>
         <p>At Florida Concrete Coating, we install durable, professional-grade garage floor coatings designed to handle Florida heat, humidity, and daily wear, without peeling or fading.</p>
       </div>
     </section>
@@ -210,7 +210,7 @@ function DetailsSection() {
         </button>
         <h2>Durable Garage Floor Coatings Installed the Right Way</h2>
         <p>Your garage floor goes through a lot: hot tires, heavy use, moisture, and stains. At Florida Concrete Coating, we install professional-grade coatings that protect your concrete while giving your garage a clean, finished look.</p>
-        <p>We don't cut corners on prep or rush the job. Every floor is properly prepared, coated, and sealed to ensure long-term durability and performance. Proudly serving homeowners in Davenport and surrounding Central Florida areas.</p>
+        <p>We don't cut corners on prep or rush the job. Every floor is properly prepared, coated, and sealed to ensure long-term durability and performance. Proudly serving homeowners in Central Florida and surrounding Central Florida areas.</p>
       </div>
 
       <div className="details-section__grid">
@@ -270,7 +270,7 @@ export default function GarageFloorCoatingsPage() {
       <DetailsSection />
       <RecentWorks />
       <WhyUsSection className="why-us why-us--white" />
-      <ReviewsSection className="reviews reviews--white" city="Davenport" />
+      <ReviewsSection className="reviews reviews--white" city="Central Florida" />
       <CTASection />
       <Footer />
     </main>

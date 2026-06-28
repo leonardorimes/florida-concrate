@@ -50,7 +50,7 @@ function Expertise() {
             quality workmanship, delivering durable, great-looking concrete
             coatings
             <br className="desktop-break" />
-            for homes and businesses in Davenport, FL.
+            for homes and businesses in Central Florida.
           </p>
         </div>
 
@@ -372,17 +372,17 @@ export default function Home() {
           {/* LEFT — headline + intro + benefits */}
           <div className="hero-copy">
             <div className="eyebrow">
-              <b>★</b> Davenport Epoxy Floor Expert
+              <b>★</b> Central Florida Epoxy Floor Expert
             </div>
             <h1>
-              Call Today and Get
+              <span style={{ whiteSpace: "nowrap" }}>Call Today and Get</span>
               <br />
-              <strong>$250 OFF</strong> Your Epoxy
+              <strong>$250 OFF</strong> Your
               <br />
-              Garage Floor
+              <span style={{ whiteSpace: "nowrap" }}>Epoxy Garage Floor</span>
             </h1>
             <p className="intro">
-              Trusted by Davenport homeowners for premium epoxy garage
+              Trusted by Central Florida homeowners for premium epoxy garage
               <br className="desktop-break" />
               floor coatings that last a lifetime at prices that won&apos;t
               break the bank.

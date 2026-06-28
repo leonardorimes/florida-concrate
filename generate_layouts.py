@@ -12,7 +12,7 @@ for root, dirs, files in os.walk(app_dir):
         
         layout_content = f"""export const metadata = {{
   title: "{title}",
-  description: "Professional {title.lower()} services by Florida Concrete Coating. Serving Davenport and surrounding areas with premium quality solutions.",
+  description: "Professional {title.lower()} services by Florida Concrete Coating. Serving Central Florida and surrounding areas with premium quality solutions.",
   alternates: {{
     canonical: '/{rel_path}',
   }},
